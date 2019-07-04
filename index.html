@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Typer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="time-load"></div>
+  <div id="app">
+    <div class="container">
+      <!-- <div id="app__clock">
+        30
+      </div> -->
+      <div class="app__label label">
+        <p>Type this:</p>
+      </div>
+      <div class="app__words">
+        <span id="app__words--container--done"></span><span id="app__words--container"></span>
+      </div>
+      <div class="app__form">
+        <input type="text" class="form--input" id="app__form--input---js" onkeyup="checkText()" autofocus>
+      </div>
+    </div>
+  </div>
+  <div id="finish">
+    <div class="container">
+      <div class="row">
+        <div class="finish__label col-6">
+          <span class="label">Time's up!</span>
+          <!-- <span class="label label--impression" id="finish__label--impression---js">WOW! How fast you are? Are you fast or a hacker?</span> -->
+        </div>
+        <div class="finish__score col-6">
+          <span class="label label--score">Score</span>
+          <span class="label label--score-value" id="finish__label--score-value---js">25000</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="finish__action">
+          <button onclick="restartApp()">Start again?</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>

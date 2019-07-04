@@ -1,0 +1,118 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: Tahoma, Geneva, Verdana, sans-serif
+}
+.container{
+  width:70%;
+  max-width: 1000px;
+  min-width: 720px;
+  padding: 10px;
+  margin:0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+body{
+}
+#time-load{
+  position: fixed;
+  width: 0;
+  height: 100vh;
+  background-color: #21d63c;  
+  /* background-color: rgba(255,255,255,0.15); */
+  transition: 1s;
+  transition-timing-function: linear
+}
+#app{
+  background: #1D1D1D;
+  color: white;
+  padding-top: 15vh;
+  height: 100vh;
+  box-sizing: border-box;
+}
+#app .app__label p{
+  font-size: 30px;
+}
+#app .app__words span{
+  font-size: 60px;
+  font-weight:bold;
+  text-shadow: 0 6px 15px rgba(0,0,0,0.5);
+  /* -webkit-text-stroke: 1px black; */
+
+}
+#app__words--container--done{
+  color: #27ea44;
+}
+#app .app__form .form--input{
+  font-size: 45px;
+  margin: 15px 0;
+  background: transparent;
+  border:0;
+  border-bottom: 5px solid white;
+  outline: 0;
+  color: white;
+}
+.col-6{
+  width: calc(50% - 4px);
+  float: left;
+}
+.row{
+  clear:both;
+  display: flex;
+}
+#finish{
+  background-color: #21d63c;
+  /* background: linear-gradient(45deg, #019797,#27ea44); */
+  color: white;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 15vh;
+}
+#finish .finish__label{
+  padding: 100px 0px;
+  padding-right: 40px;
+  border-right: 5px solid white;
+  font-weight: bold;
+  font-size: 70px;
+  box-sizing: border-box;
+  text-align: right;
+}
+#finish .finish__score{
+  padding: 70px 0px;
+  padding-left: 30px;
+}
+#finish .finish__score .label{
+  display: block;
+}
+#finish .finish__score .label--score{
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#finish .finish__score .label--score-value{
+  font-size: 60px;
+}
+#finish .finish__action{
+  margin-top: 40px;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+#finish .finish__action button{
+  color: white;
+  border: 5px solid white;
+  font-size: 40px;
+  font-weight:bold;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 15px;
+  transition: 0.1s;
+  outline: 0;
+}
+#finish .finish__action button:hover{
+  background: white;
+  transition: 0.1s;
+  color: #21d63c;
+}
