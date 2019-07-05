@@ -13,8 +13,7 @@
   box-sizing: border-box;
   position: relative;
 }
-body{
-}
+/* body{} */
 #time-load{
   position: fixed;
   width: 0;
