@@ -7,6 +7,7 @@ let initialTime = 30;
 let timeLeft = initialTime;
 
 let divFinish = document.getElementById('finish');
+let divFinishContainer = document.getElementById('finish__container---js');
 let divApp = document.getElementById('app');
 let wordsContainer = document.getElementById('app__words--container');
 let wordsContainerDone = document.getElementById('app__words--container--done');
@@ -21,18 +22,22 @@ restartApp();
 
 function start(){
   divFinish.style.display = 'none';
+  divFinishContainer.style.opacity = 0;
+  divFinishContainer.style.transform = 'scale(0.8)';
   divApp.style.display = 'block';
-
+  
   timeLoad.style.transiton = '0.3s';
   timeLoad.style.transitionTimingFunction = 'linear';  
-
-
-
+  
+  
+  
   time = setIntervalAndExecute(timer,1000);
 }
 
 function finish(){
   divFinish.style.display = 'block';
+  divFinishContainer.style.opacity = 1;
+  divFinishContainer.style.transform = 'scale(1)';
   divApp.style.display = 'none';
   labelScoreValue.innerHTML = score;
 
@@ -67,7 +72,7 @@ function generateText(text){
 }
 
 function checkText(){
-  if(timeLeft === 30){
+  if(timeLeft === initialTime && formInput.value.length > 0){
     start();
   }
   
